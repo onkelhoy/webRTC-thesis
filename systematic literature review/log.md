@@ -20,17 +20,22 @@ economical , security, ipv6
 
 ## Evaluation
 ### evaluation for _search-id_ = **8**
-| INSPEC Accession Number | ieee id | paper name |
-| --------: | :------- | :--------- |
-| 9529396 | 4149914 | Web-based Peer-to-Peer Internet Telephony Service Built on a Distributed Hash Table
-| 8605255 | 1452172 | Performance enhancement via two-layer support for peer-to-peer systems using active networking
-| 10358317 | 4681055 | A Web Services-Based Distributed Information Retrieval Model |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| INSPEC Accession Number | ieee id | paper name | star |
+| --------: | :------- | :--------- | --: |
+| 9529396 | 4149914 | Web-based Peer-to-Peer Internet Telephony Service Built on a Distributed Hash Table | no|
+| 8605255 | 1452172 | Performance enhancement via two-layer support for peer-to-peer systems using active networking | no|
+| 10358317 | 4681055 | A Web Services-Based Distributed Information Retrieval Model | no|
+| 8749615 | 1560405 | An optimised geographically-aware overlay network | yes |
+| 8749615 | 1560405 | An optimised geographically-aware overlay network | no |
+| | | | no |
+| | | | no |
+| | | | no |
+| | | | no |
+| | | | no |
+| | | | no |
+| | | | no |
+
+### READ materials for search-id = 8
+| INSPEC | url |
+| -----: | :-- |
+| 8749615 | https://ieeexplore-ieee-org.proxy.lnu.se/document/1560405
