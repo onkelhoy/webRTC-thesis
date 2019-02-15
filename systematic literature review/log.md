@@ -26,7 +26,7 @@ economical , security, ipv6
 | 8605255 | 1452172 | Performance enhancement via two-layer support for peer-to-peer systems using active networking | no|
 | 10358317 | 4681055 | A Web Services-Based Distributed Information Retrieval Model | no|
 | 8749615 | 1560405 | An optimised geographically-aware overlay network | yes |
-| 8749615 | 1560405 | An optimised geographically-aware overlay network | no |
+| 10719794 | 5076226 | Massively Scalable Web Service Discovery | no |
 | | | | no |
 | | | | no |
 | | | | no |
