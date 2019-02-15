@@ -1,5 +1,7 @@
 # Systematic Literature Review 
 
+### databese : ieeexplore (*https://ieeexplore-ieee-org.proxy.lnu.se*)
+
 | Id | Search Data | Query Search | #Results | 
 | --:|:------------|:-------------|---------:|
 | 1 | *2019/2/15 20:36* | "peer networking" AND "topologies" AND "web" |  0
@@ -14,6 +16,21 @@
 
 ## Exclusion
 from *1996* to *2019*  
-economical  
+economical , security, ipv6
 
 ## Evaluation
+### evaluation for _search-id_ = **8**
+| INSPEC Accession Number | ieee id | paper name |
+| --------: | :------- | :--------- |
+| 9529396 | 4149914 | Web-based Peer-to-Peer Internet Telephony Service Built on a Distributed Hash Table
+| 8605255 | 1452172 | Performance enhancement via two-layer support for peer-to-peer systems using active networking
+| 10358317 | 4681055 | A Web Services-Based Distributed Information Retrieval Model |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
