@@ -16,7 +16,10 @@
 
 ## Exclusion
 from *1996* to *2019*  
-economical , security, ipv6, peer not mentioned in abstract
+economical , security, ipv6  
+peer not mentioned in abstract  
+p2p is used as a tool 
+
 
 ## Evaluation
 ### evaluation for _search-id_ = **8**
@@ -30,13 +33,23 @@ economical , security, ipv6, peer not mentioned in abstract
 | 8978538 | 1620163 | Freelib: peer-to-peer-based digital libraries | no |
 | 11362822 | 5480602 | An Adaptive Content Sharing Protocol for P2P Mobile Social Networks | no |
 | 15699541 | 7372289 | A Socio-Aware Decentralized Topology Construction Protocol | yes |
-| | | | no |
+| 10475005 | 4784959 | Interest-Based Self Organization in Group-Structured P2P Networks | no |
 | | | | no |
 | | | | no |
 | | | | no |
 
+#### left to review : there are more in next pages ofc
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/5339819
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/4061221
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/8390396
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/4411095
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/4384532
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/5301839
+- https://ieeexplore-ieee-org.proxy.lnu.se/document/6950726
+
+
 ### READ materials for search-id = 8
-| INSPEC | url |
-| -----: | :-- |
-| 8749615 | https://ieeexplore-ieee-org.proxy.lnu.se/document/1560405
-| 15699541 | https://ieeexplore-ieee-org.proxy.lnu.se/document/7372289
+| INSPEC | url | motivation keywords |
+| -----: | :-- | :-----------------: |
+| 8749615 | https://ieeexplore-ieee-org.proxy.lnu.se/document/1560405 | toplogy, latancy
+| 15699541 | https://ieeexplore-ieee-org.proxy.lnu.se/document/7372289 | sprout, chord, pastry
