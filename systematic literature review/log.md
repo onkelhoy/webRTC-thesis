@@ -16,7 +16,7 @@
 
 ## Exclusion
 from *1996* to *2019*  
-economical , security, ipv6
+economical , security, ipv6, peer not mentioned in abstract
 
 ## Evaluation
 ### evaluation for _search-id_ = **8**
@@ -27,9 +27,9 @@ economical , security, ipv6
 | 10358317 | 4681055 | A Web Services-Based Distributed Information Retrieval Model | no|
 | 8749615 | 1560405 | An optimised geographically-aware overlay network | yes |
 | 10719794 | 5076226 | Massively Scalable Web Service Discovery | no |
-| | | | no |
-| | | | no |
-| | | | no |
+| 8978538 | 1620163 | Freelib: peer-to-peer-based digital libraries | no |
+| 11362822 | 5480602 | An Adaptive Content Sharing Protocol for P2P Mobile Social Networks | no |
+| 15699541 | 7372289 | A Socio-Aware Decentralized Topology Construction Protocol | yes |
 | | | | no |
 | | | | no |
 | | | | no |
@@ -39,3 +39,4 @@ economical , security, ipv6
 | INSPEC | url |
 | -----: | :-- |
 | 8749615 | https://ieeexplore-ieee-org.proxy.lnu.se/document/1560405
+| 15699541 | https://ieeexplore-ieee-org.proxy.lnu.se/document/7372289
