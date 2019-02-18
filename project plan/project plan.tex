@@ -15,18 +15,18 @@
 
 \section*{General Information}
 \begin{tabular} {|p{3.8cm}|p{9cm}|} \hline
-Title: & Preliminary title of your degree project \\ \hline
+Title: & Reel-time communication using a peer-to-peer network in the web \\ \hline
 External company: & Name of the company (if you do your degree project at an external company) \\ \hline
 \end{tabular}
 
 \section*{Persons involved}
 \begin{tabular} {|p{2.2cm}|p{4.7cm}|p{5.47cm}|} \hline
-Student 1: & Your name here & Your email address here \\ \hline
+Student 1: & Henry Pap & hp222fq@student.lnu.se \\ \hline
 Student 2: &  &  \\ \hline
 \end{tabular}
 \\ \vspace*{0.2cm} \\
 \begin{tabular} {|p{3.9cm}|p{8.9cm}|} \hline
-Supervisor: & Your supervisor at the university (if you already have been appointed a supervisor) \\ \hline
+Supervisor: & Mauro Caporuscio \textit{mauro.caporuscio@lnu.se} \\ \hline
 External supervisor: & Your supervisor at the company (if you do your degree project at an external company) \\ \hline
 \end{tabular}
 
@@ -40,37 +40,56 @@ Briefly describe the problem you plan to investigate, its limitations, and what 
 Briefly describe why your problem is interesting for science, society or industry. Use references in IEEE format\cite{Chalmers:2013,Darwin:1859}.
 
 \section*{Objectives}
-Present a list of the objectives to do in your project. An objective shall be understandable, not too small or too large, and possible to define when it is completed or not. You can read about objectives \href{https://coursepress.lnu.se/subject/thesis-projects/objectives/}{here}.\\
-\\
+
 \begin{tabular} {|p{1.2cm}|p{11.6cm}|} \hline
-\textbf{O1} & Objective 1 ... \\ \hline
-\textbf{O2} & Objective 2 ... \\ \hline
+\textbf{O1} & How to achieve scalability for real-time peer-to-peer network in the web. \\ \hline
+\textbf{O2} & Determine the most suitable peer-to-peer topology. \\ \hline
+\textbf{O3} & Achieving low latency for real time multiplayer games. \\ \hline
 \end{tabular}
 
 \section*{Method}
-Here you described which method you plan to use to approach and answer your problem. The most common ones are:
-\begin{itemize}
-\item Controlled Experiment
-\item Survey using questionnaires
-\item Interview
-\item Case Study
-\item Systematic Literature Review
-\item Verification and Validation 
-\end{itemize}
+A systematic literature review will be conducted in order to gather background 
+knowledge about peer to peer network topologies. For determine the most suitable 
+peer-to-peer network topology a comparative study has to be done thus ranking the 
+topologies. And by experimentation on them with their corresponding settings, 
+achieving the best topology based on both low latency and scalability. 
 
-You can read about methods \href{https://coursepress.lnu.se/subject/thesis-projects/method-overview/}{here}.
+
+\noindent\newline From the experiment-results, picking the most suitable topology 
+and implementing it using webRTC API and then verify and validate it.
+
+\subsection*{Methods used}
+\begin{enumerate}
+  \item Systematic Literature Review
+  \item Comparative study
+  \item Controlled Experiment
+  \item Verification and Validation 
+\end{enumerate}
 
 \section*{Time plan}
-Describe the milestones in the project and when they are expected to be finished. Example:
-\\
 \begin{tabular} {|p{2.6cm}|p{10.2cm}|} \hline
 \textbf{Date} & \textbf{Milestone} \\ \hline
-2015-xx-xx & Degree project plan finished \\ \hline
-2015-xx-xx & Implementation started \\ \hline
-2015-xx-xx & ... \\ \hline
+2019-02-15 & Systematic Literature Review for background knowledge (SLR)\\ \hline
+2019-02-20 & Degree project plan finished \\ \hline
+2019-03-08 & Reading and gather the information generated from the SLR \\ \hline
+2019-03-10 & selecting 5 peer-to-peer topologies \\ \hline
+2019-03-17 & Writing the peer-to-peer background part based on the selected topologies \\ \hline
+2019-03-20 & Exploring the webRTC API by both reading the specs and testing with simple implementations  \\ \hline
+2019-03-23 & Finishing the background with webRTC \\ \hline
+2019-03-25 & Writing the motivation and aim (re-using this document with some retouching) \\ \hline
+2019-03-27 & Starting with the (method?) and result \\ \hline
+2019-04-05 & Experiment with the different topologies to achieve low latency and scalability \\ \hline
+2019-04-15 & Implement the most suitable topology into web environment using the webRTC API \\ \hline
+2019-04-20 & Verifying and validating the implementation  \\ \hline
+2019-04-22 & Discussing the results based on the evaluation  \\ \hline
+2019-04-23 & Discuss the picking of the 5 topologies \\ \hline
+2019-04-27 & Finish the conclusion \\ \hline
+2019-05-01 & Finalizing the thesis  \\ \hline
+2019-05-03 & Preparing the presentation \\ \hline
 \end{tabular}
 
-\bibliographystyle{plain}
+\pagebreak
+\bibliographystyle{IEEEtran}
 \bibliography{./references}
 
 \end{document}}

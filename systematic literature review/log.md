@@ -53,3 +53,9 @@ p2p is used as a tool
 | -----: | :-- | :-----------------: |
 | 8749615 | https://ieeexplore-ieee-org.proxy.lnu.se/document/1560405 | toplogy, latancy
 | 15699541 | https://ieeexplore-ieee-org.proxy.lnu.se/document/7372289 | sprout, chord, pastry
+
+
+# Papers that must be read
+| name | url |
+| ---: | :-- |
+| Comparing different n​etwork​topologies for WebRTC conferencing | https://www.kth.se/social/files/56143db5f2765422ae79942c/WebRTC.pdf |
