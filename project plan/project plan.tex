@@ -31,13 +31,45 @@ External supervisor: & Your supervisor at the company (if you do your degree pro
 \end{tabular}
 
 \section*{Background}
-Describe the background to the problem area of your degree project. Max half page.
+Real-time communication (RTC) \cite{Techopedia:RTCdefinition} is a term describing live communication between two or more mediums
+with no or very low response time. In the context of networking this means distributed clients (geographically) 
+can communicate with each other on a low latency. Today we either use client-server or peer-to-peer architectures
+that both come with their own pros and cons. 
+Peer-to-peer (P2P) systems in the accepted definition by Theotokis et al. \cite{Androutsellis-Theotokis:2004:SPC:1041680.1041681} are pure and loose P2P systems, where pure refers to total
+distribution meaning no use of central servers and loose being something in between of pure P2P and client-server 
+without relying to much on centralized servers. 
+\pagebreak 
+
+\noindent Web technology offers three main methods for communication (native to the web-browsers):
+\begin{enumerate}
+  \item HTTP 
+  \item WebSockets 
+  \item webRTC 
+\end{enumerate}
+
+But only WebSockets and webRTC is considered fast enough for RTC, WebSockets
+uses what is called a push and receive service meaning that a server also can 
+send messages to clients. But only the "newly" API webRTC supports peer-to-peer 
+communication as it resolves finding the direct communication-link between two peers. 
+Using the web browser comes with drawbacks, it can not handle to much peers and thus the 
+recommended number of connected peers to one client is 6. To overcome this issue a specific 
+P2P topology is required, by smart routing and use of super-nodes (client that acts like servers)
+an virtual network will then be formed.
+
 
 \section*{Problem formulation}
-Briefly describe the problem you plan to investigate, its limitations, and what results you expect. You can read about suitable problems \href{https://coursepress.lnu.se/subject/thesis-projects/problem/}{here}.
+Peer-to-peer RTC networks is a challenging problem on itself that has been solved multiple times, 
+but doing this entirely in the web is not very common. This thesis will focus on multiplayer game networking 
+and trying to extend the limit of peer connections in the web using the webRTC API. By investigating and 
+using different peer-to-peer topologies that helps extend the peer-connections of a web browser while still 
+keeping a low latency potential solutions for real-time multiplayer game will be evaluated. 
 
 \section*{Motivation}
-Briefly describe why your problem is interesting for science, society or industry. Use references in IEEE format\cite{Chalmers:2013,Darwin:1859}.
+As mentioned in the problem formulation, peer-to-peer real time communication using the web is not something that 
+has been solved on a higher level (i.e. having scalability and low latency). From a economical view point this 
+helps the game creator to not spend money on a expensive server that handles multiple connections. From a scientific 
+point of view, as more and more application is integrated into the web browsers due to its broad availability to almost all 
+platforms we need better ways for real-time communication using only the web browser as a toolbox. 
 
 \section*{Objectives}
 
@@ -70,7 +102,7 @@ and implementing it using webRTC API and then verify and validate it.
 \begin{tabular} {|p{2.6cm}|p{10.2cm}|} \hline
 \textbf{Date} & \textbf{Milestone} \\ \hline
 2019-02-15 & Systematic Literature Review for background knowledge (SLR)\\ \hline
-2019-02-20 & Degree project plan finished \\ \hline
+2019-02-19 & Degree project plan finished \\ \hline
 2019-03-08 & Reading and gather the information generated from the SLR \\ \hline
 2019-03-10 & selecting 5 peer-to-peer topologies \\ \hline
 2019-03-17 & Writing the peer-to-peer background part based on the selected topologies \\ \hline
