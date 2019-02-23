@@ -30,6 +30,8 @@ Supervisor: & Mauro Caporuscio \textit{mauro.caporuscio@lnu.se} \\ \hline
 External supervisor: & Your supervisor at the company (if you do your degree project at an external company) \\ \hline
 \end{tabular}
 
+\pagebreak
+
 \section*{Background}
 Real-time communication (RTC) \cite{Techopedia:RTCdefinition} is a term describing live communication between two or more mediums
 with no or very low response time. In the context of networking this means distributed clients (geographically) 
@@ -38,7 +40,6 @@ that both come with their own pros and cons.
 Peer-to-peer (P2P) systems in the accepted definition by Theotokis et al. \cite{Androutsellis-Theotokis:2004:SPC:1041680.1041681} are pure and loose P2P systems, where pure refers to total
 distribution meaning no use of central servers and loose being something in between of pure P2P and client-server 
 without relying to much on centralized servers. 
-\pagebreak 
 
 \noindent Web technology offers three main methods for communication (native to the web-browsers):
 \begin{enumerate}
@@ -47,56 +48,81 @@ without relying to much on centralized servers.
   \item webRTC 
 \end{enumerate}
 
-But only WebSockets and webRTC is considered fast enough for RTC, WebSockets
-uses what is called a push and receive service meaning that a server also can 
-send messages to clients. But only the "newly" API webRTC supports peer-to-peer 
-communication as it resolves finding the direct communication-link between two peers. 
-Using the web browser comes with drawbacks, it can not handle to much peers and thus the 
-recommended number of connected peers to one client is 6. To overcome this issue a specific 
-P2P topology is required, by smart routing and use of super-nodes (client that acts like servers)
-an virtual network will then be formed.
+But only WebSockets and webRTC is considered fast enough for RTC, 
+WebSockets uses what is called a push and receive service meaning 
+that a server also can send messages to clients. But only the "newly" 
+API webRTC supports peer-to-peer communication as it resolves finding 
+the direct communication-link between two peers. Using the web browser 
+comes with drawbacks, it can not handle to much peers and thus the 
+recommended number of connected peers to one client is 6. To overcome 
+this issue a specific P2P topology is required, by smart routing and 
+use of super-nodes (client that acts like servers)an virtual network 
+will then be formed.
 
+\pagebreak
 
 \section*{Problem formulation}
-Peer-to-peer RTC networks is a challenging problem on itself that has been solved multiple times, 
-but doing this entirely in the web is not very common. This thesis will focus on multiplayer game networking 
-and trying to extend the limit of peer connections in the web using the webRTC API. By investigating and 
-using different peer-to-peer topologies that helps extend the peer-connections of a web browser while still 
-keeping a low latency potential solutions for real-time multiplayer game will be evaluated. 
+Peer-to-peer RTC networks is a challenging problem on itself that has 
+been solved multiple times, but doing this entirely in the web is not 
+very common. This thesis will focus on multiplayer game networking 
+using the native browser-built in webRTC API. The webRTC API has limits 
+of connections since it is running directly in the browser.The focus for 
+this thesis will thus be to extend the small limit webRTC has while still 
+keeping a low latency as this is an very important aspect of real-time 
+multiplayer games. The peer-to-peer network must also consider synchronous 
+playback that is everyone in the network should get the same feed of data 
+at an considerable same time (overall same latency over the whole network). 
+Dropout of nodes is another important issue that peer-to-peer brings as 
+the dropout peer could be a potential gateway for other peers in the network. 
+To sum the problem formulation up, in order for the webRTC API to be a
+potential solution for online real-time communication for games an topology
+must be carefully picked and finalized.
+
+and extend the webRTC peer-connection limit by using a peer-to-peer 
+topology in order to achieve scalability. Real time multiplayer game 
+bring the problem of having low latency since it would be pointless 
+without it thus the topology must also cover this part.
+
 
 \section*{Motivation}
-As mentioned in the problem formulation, peer-to-peer real time communication using the web is not something that 
-has been solved on a higher level (i.e. having scalability and low latency). From a economical view point this 
-helps the game creator to not spend money on a expensive server that handles multiple connections. From a scientific 
-point of view, as more and more application is integrated into the web browsers due to its broad availability to almost all 
-platforms we need better ways for real-time communication using only the web browser as a toolbox. 
+As mentioned in the problem formulation, peer-to-peer real time 
+communication using the web is not something that 
+has been solved on a higher level (i.e. having scalability and 
+low latency). From a economical view point this 
+helps the game creator to not spend money on a expensive server 
+that handles multiple connections. From a scientific 
+point of view, as more and more application is integrated into 
+the web browsers due to its broad availability to almost all 
+platforms we need better ways for real-time communication using 
+only the web browser as our toolbox as this solution can easily 
+be extended to not only real-time multiplayer games. 
 
 \section*{Objectives}
 
 \begin{tabular} {|p{1.2cm}|p{11.6cm}|} \hline
-\textbf{O1} & How to achieve scalability for real-time peer-to-peer network in the web. \\ \hline
-\textbf{O2} & Determine the most suitable peer-to-peer topology. \\ \hline
-\textbf{O3} & Achieving low latency for real time multiplayer games. \\ \hline
-\end{tabular}
+\textbf{01} & Selecting some peer-to-peer network topologies that aims for low latency and scalability. \\ \hline 
+\textbf{02} & Defining requirements in order to have something to compare against (low latency, high scalability etc). \\ \hline 
+\textbf{03} & Compare the selected peer-to-peer network topology in order to lower the amount of topologies. \\ \hline
+\textbf{04} & Experimenting with the selected topologies and their corresponding settings to lower the list even more. \\ \hline 
+\textbf{05} & Setting up a test/simulation in order to test webRTC topology. \\ \hline 
+\textbf{06} & Implement and experiment using the test and webRTC to pick the final topology. \\ \hline 
+\textbf{07} & Finalize \& optimize the final implementation. \\ \hline
+\end{tabular} 
 
 \section*{Method}
-A systematic literature review will be conducted in order to gather background 
-knowledge about peer to peer network topologies. For determine the most suitable 
-peer-to-peer network topology a comparative study has to be done thus ranking the 
-topologies. And by experimentation on them with their corresponding settings, 
-achieving the best topology based on both low latency and scalability. 
+To select the different network topologies a systematic literature review 
+(SLR) must first take place to gather the background knowledge. Same 
+applies for background knowledge of the webRTC API. Selecting the 
+topologies requires a comparative method between the many topologies as a 
+result of the SLR in order to lower the list. 
 
+\noindent Running experiments on the topologies with their own settings results of 
+a small topology list that will be implemented using webRTC techniques. 
+Further experiments and implementation will then be conducted thus resulting
+in a final implementation using a specific optimized topology. The final 
+implementation will be verified and validated to make sure it runs and 
+meet the defined requirements. 
 
-\noindent\newline From the experiment-results, picking the most suitable topology 
-and implementing it using webRTC API and then verify and validate it.
-
-\subsection*{Methods used}
-\begin{enumerate}
-  \item Systematic Literature Review
-  \item Comparative study
-  \item Controlled Experiment
-  \item Verification and Validation 
-\end{enumerate}
 
 \section*{Time plan}
 \begin{tabular} {|p{2.6cm}|p{10.2cm}|} \hline
@@ -104,20 +130,17 @@ and implementing it using webRTC API and then verify and validate it.
 2019-02-15 & Systematic Literature Review for background knowledge (SLR)\\ \hline
 2019-02-19 & Degree project plan finished \\ \hline
 2019-03-08 & Reading and gather the information generated from the SLR \\ \hline
-2019-03-10 & selecting 5 peer-to-peer topologies \\ \hline
 2019-03-17 & Writing the peer-to-peer background part based on the selected topologies \\ \hline
 2019-03-20 & Exploring the webRTC API by both reading the specs and testing with simple implementations  \\ \hline
-2019-03-23 & Finishing the background with webRTC \\ \hline
+2019-03-22 & Finishing the background with webRTC \\ \hline
+2019-03-23 & Defining the requirements for the topology \\ \hline
 2019-03-25 & Writing the motivation and aim (re-using this document with some retouching) \\ \hline
 2019-03-27 & Starting with the (method?) and result \\ \hline
 2019-04-05 & Experiment with the different topologies to achieve low latency and scalability \\ \hline
 2019-04-15 & Implement the most suitable topology into web environment using the webRTC API \\ \hline
 2019-04-20 & Verifying and validating the implementation  \\ \hline
 2019-04-22 & Discussing the results based on the evaluation  \\ \hline
-2019-04-23 & Discuss the picking of the 5 topologies \\ \hline
-2019-04-27 & Finish the conclusion \\ \hline
 2019-05-01 & Finalizing the thesis  \\ \hline
-2019-05-03 & Preparing the presentation \\ \hline
 \end{tabular}
 
 \pagebreak
