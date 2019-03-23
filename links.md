@@ -1,0 +1,11 @@
+https://ieeexplore-ieee-org.proxy.lnu.se/document/1668400
+https://pdos.csail.mit.edu/papers/chord:sigcomm01/chord_sigcomm.pdf
+https://ieeexplore-ieee-org.proxy.lnu.se/document/1266180/keywords#keywords
+https://dl-acm-org.proxy.lnu.se/citation.cfm?doid=2522968.2522977
+https://www.researchgate.net/profile/Bo_Li16/publication/2944067_Peer-to-Peer_Overlay_Networks_A_Survey/links/553dfab00cf2c415bb0f882d.pdf
+https://www.cs.ubc.ca/~gberseth/projects/ArmGame/ARM%20Game%20With%20Distributed%20States%20-%20Glen%20Berseth,%20Ravjot%20%20%20%20%20%20Singh.pdf
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.64.1218
+http://www.cs.umd.edu/projects/p2prg/p2p-overview.pdf
+https://www.spinellis.gr/pubs/jrnl/2004-ACMCS-p2p/html/AS04.pdf
+https://bloggeek.me/how-many-users-webrtc-call/
+https://www.kth.se/social/files/56143db5f2765422ae79942c/WebRTC.pdf
