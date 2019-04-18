@@ -1,0 +1,44 @@
+{
+  "name": "chord-simulation-no-p2p",
+  "version": "1.0.0",
+  "description": "a quick and dirty simulation of chord without p2p, for now communication is done on websockets (just to test the chord)",
+  "main": "server.js",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env MODE=dev node server.js"
+  },
+  "author": "Henry Pap",
+  "license": "MIT ",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "cryptiles": ">=4.1.2",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-hot-middleware": "^2.22.2"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.43",
+    "body-parser": "^1.18.3",
+    "cross-env": "^5.2.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "http": "0.0.0",
+    "sha1": "^1.1.1",
+    "ws": "^6.2.1"
+  }
+}

@@ -1,0 +1,4 @@
+# Chord 
+
+Chord does not seem very valuable for a game in the sense that in a game all peers must communicate with all other peers,
+or atleast so in this case where the game is static i.e. everything you see on the screen is the whole game (no players outside of your view). This makes it abit more stressful as all players must know all other players position at all time, either the peer broadcast its position to all other peers or all other peers ask the peer for his/her position. The first one seems more of the logical solution but a smarter algorithm needs to take place in order to not forward the position if not needed e.g. if the peers successor already got the message from lets say the predeccessor. The second solution (let everyone ask for your posiiton) feels more like the "chord-way" since chord deals more with files that a specific peer should determine if he/she wants to access. 
