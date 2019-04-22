@@ -10,44 +10,55 @@ module.exports = function (server)
   wss.on('connection', connect)
 }
 
+function socketMessage (event) {
+  let data = JSON.parse(event)
+
+  console.log('new message', data)
+
+  if (data.type === 'init-ACK')
+  {
+    if (clients[data.uuid])
+    {
+      console.log('already exists', data.uuid)
+      this.id = sha1(Math.random() + '.' + new Date().getTime())
+      this.send(JSON.stringify({ type: 'init', id: this.id }))
+    }
+    else 
+    {
+      clients[data.uuid] = this 
+      this.uuid = data.uuid
+      this.send(JSON.stringify({ type: 'connect', host: hostid }))
+      
+      if (!hostid)
+      {
+        hostid = this.uuid 
+      }
+    }
+  }
+  else if (data.to) 
+  {
+    console.log('send to', data.to)
+    clients[data.to].send(event)
+  }
+}
 
 function connect (socket) {
   socket.id = sha1(Math.random() + '.' + new Date().getTime())
-  clients[socket.id] = socket 
-
-  if (!hostid)
-  {
-    hostid = socket.id 
-  }
-  else 
-  {
-    clients[hostid].send(JSON.stringify({arival: socket.id}))
-  }
-
-  socket.send(JSON.stringify({ id: socket.id }))
+  // client should generate the uuid and send it back 
   
-  socket.on('message', message => {
-    let data = JSON.parse(message)
-    
-    for (let id in clients) 
-    {
-      if (id === data.id)
-      {
-        clients[id].send(message)
-      }
-    }
-  })
+  socket.send(JSON.stringify({ type: 'init', id: socket.id }))
+  socket.on('message', socketMessage)
 
   socket.on('close', data => {
     // tell the others.. or dont ? 
-    delete clients[socket.id] 
-    if (socket.id === hostid)
+    delete clients[socket.uuid] 
+    
+    if (socket.uuid == hostid)
     {
-      console.log('host left')
       hostid = null 
       for (let id in clients)
       {
-        hostid = id 
+        hostid = id
         break
       }
     }
